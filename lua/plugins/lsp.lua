@@ -21,7 +21,6 @@ return {
             end
             nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
             nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-            imap('<C-i>', vim.lsp.buf.completion, "Completion")
             nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
             nmap('gr', require('telescope.builtin').lsp_references,
                  '[G]oto [R]eferences')
