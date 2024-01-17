@@ -14,7 +14,6 @@ return {
 			typescriptreact = { "eslint_d" },
 			json = { "jsonlint" },
 			go = { "golangci-lint" },
-			gitcommit = { "gitlint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
