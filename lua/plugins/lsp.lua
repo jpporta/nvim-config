@@ -39,7 +39,6 @@ return {
                  '[W]orkspace [A]dd Folder')
             nmap('<leader>wr', vim.lsp.buf.remove_workspace_folder,
                  '[W]orkspace [R]emove Folder')
-            nmap('<leader>f', '<Cmd>Neoformat<CR>', "[F]ormat")
             nmap('<leader>wl', function()
                 print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
             end, '[W]orkspace [L]ist Folders')
