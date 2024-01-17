@@ -3,7 +3,7 @@ return {
     config = function()
 
         require('oil').setup({
-            columns = {"icon", "size", "mtime"},
+            columns = {"icon"},
             keymaps = {
                 ["g?"] = "actions.show_help",
                 ["<CR>"] = "actions.select",
