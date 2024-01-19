@@ -27,4 +27,10 @@ return {
 			lsp_doc_border = false, -- add a border to hover docs and signature help
 		},
 	},
+	setup = function()
+		---@diagnostic disable-next-line: missing-fields
+		require("notify").setup({
+			background_colour = "#000000",
+		})
+	end,
 }
