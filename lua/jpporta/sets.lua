@@ -39,3 +39,4 @@ end, {})
 
 vim.g.neoformat_try_node_exe = 1
 vim.g.copilot_no_tab_map = true
+vim.g.tmux_navigator_no_mappings = true
