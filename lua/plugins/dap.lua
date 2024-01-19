@@ -32,5 +32,12 @@ return {
 		dap.listeners.before.event_exited.dapui_config = function()
 			dapui.close()
 		end
+
+		-- Firefox
+		dap.adapters.firefox = {
+			type = "executable",
+			command = "node",
+			args = { os.getenv("HOME") .. "/.local/share/nvim/mason/bin/firefox-debug-adapter" },
+		}
 	end,
 }
