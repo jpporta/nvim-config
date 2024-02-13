@@ -49,6 +49,7 @@ return {
 		vim.keymap.set("n", "<leader>ss", require("telescope.builtin").git_files, { desc = "Search Git Files" })
 		vim.keymap.set("n", "<leader>sb", ":Telescope file_browser<CR>", { desc = "File browser" })
 		vim.keymap.set("n", "<leader>st", ":Telescope colorscheme<CR>", { desc = "Switch Theme" })
+		vim.keymap.set("n", "<leader>se", ":Telescope emoji<CR>", { desc = "Search Emoji" })
 	end,
 	event = "VeryLazy",
 }
