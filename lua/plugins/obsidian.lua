@@ -23,7 +23,7 @@ return {
 				opts = { buffer = true },
 			},
 		},
-		daily_notes = { template = "daily.md" },
+		daily_notes = { folder = "Journal", template = "daily.md" },
 		templates = {
 			subdir = "templates",
 			date_format = "%Y-%m-%d",
@@ -101,7 +101,6 @@ return {
 			},
 		},
 		workspaces = {
-			{ name = "Work", path = "~/HD/Obsidian/Avodah" },
 			{ name = "Brain", path = "~/HD/Obsidian/Brain" },
 		},
 	},
