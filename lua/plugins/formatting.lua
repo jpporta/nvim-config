@@ -11,7 +11,9 @@ return {
 			lua = { "stylua" },
 			rust = { "rustfmt" },
 			go = { "goimports" },
+			css = { { "prettierd", "prettier" } }
 		},
+
 		format_on_save = {
 			lsp_fallback = true,
 			async = false,
@@ -25,7 +27,7 @@ return {
 				require("conform").format({
 					lsp_fallback = true,
 					async = false,
-					timeout_ms = 500,
+					timeout_ms = 1000,
 				})
 			end,
 			desc = "Format file",
