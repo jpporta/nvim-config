@@ -6,7 +6,10 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 	-- way then set 'mappings = {}'.
 	opts = {
-
+		notes_subdir = "0. INBOX",
+		completion = {
+			new_notes_location = "notes_subdir",
+		},
 		mappings = {
 			-- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
 			["gf"] = {
