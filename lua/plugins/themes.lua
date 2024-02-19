@@ -13,11 +13,5 @@ return {
 	},
 	{ "sainnhe/everforest", lazy = true, priority = 1000 },
 	{ "ellisonleao/gruvbox.nvim", lazy = true, priority = 1000 },
-	{
-		"xiyaowong/transparent.nvim",
-		event = "VeryLazy",
-		config = function()
-			require("transparent").clear_prefix("lualine")
-		end,
-	},
+	{ "tribela/vim-transparent" },
 }
