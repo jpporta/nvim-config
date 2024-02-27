@@ -1,11 +1,13 @@
 return {
-	{ "preservim/vim-pencil" },
-	{ "folke/twilight.nvim" },
 	{
 		"folke/zen-mode.nvim",
+		dependencies = {
+			{ "preservim/vim-pencil" },
+			{ "folke/twilight.nvim" },
+		},
 		opts = {
 			on_open = function()
-				vim.cmd("Pencil")
+				vim.cmd("SoftPencil")
 				vim.cmd("TwilightEnable")
 			end,
 			on_close = function()

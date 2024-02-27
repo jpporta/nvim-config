@@ -11,7 +11,8 @@ return {
 			lua = { "stylua" },
 			rust = { "rustfmt" },
 			go = { "goimports" },
-			css = { { "prettierd", "prettier" } }
+			css = { { "prettierd", "prettier" } },
+			markdown = { { "prettierd", "prettier" } },
 		},
 
 		format_on_save = {
